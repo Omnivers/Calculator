@@ -3,17 +3,17 @@ import './App.css';
 
 function App() {
   return (
-    <div className="container row">
-      <div className="output">
-        <div className="previous-operand">
-          45094905
-        </div>
-        <div className="current-operand">
+    <div className="container">
+      <div className="row output">
+        <div className="previous-operand d-flex justify-content-end">
           *9304829
+        </div>
+        <div className="current-operand d-flex justify-content-end">
+          45094905
         </div>
       </div>
       <div className="row">
-      <button className="span-two col">AC</button>
+      <button className="span-two col-6">AC</button>
       <button className='col'>DEL</button>
       <button className='col'>÷</button>
       </div>
@@ -38,7 +38,7 @@ function App() {
       <div className="row">
       <button className='col'>.</button>
       <button className='col'>0</button>
-      <button className='col span-two'>=</button>
+      <button className='col-6 span-two'>=</button>
       </div>
     </div>
   );
