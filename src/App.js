@@ -1,15 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useReducer} from 'react';
+import { render } from '@testing-library/react';
+import Digits from './components/Digits.js';
+
+const ACTIONS ={
+  Add_digits: "add-digit",
+  Choose_Operation: "operation",
+  Clear:"clear",
+  Delete_Digits: "del",
+  Evaluate : "equal",
+}
 
 function App() {
-  return (
+
+    return(
     <div className="container">
       <div className="row output">
         <div className="previous-operand d-flex justify-content-end">
-          *9304829
+          {/* {previousOperand} {operation} */}
         </div>
         <div className="current-operand d-flex justify-content-end">
-          45094905
+          {/* {currentOperand} */}
         </div>
       </div>
       <div className="row">
@@ -41,7 +53,7 @@ function App() {
       <button className='col-6 span-two'>=</button>
       </div>
     </div>
-  );
-}
+  )}
+
 
 export default App;
